@@ -1,3 +1,6 @@
+# Created by Omar E. Cornejo
+# October 2021
+
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
