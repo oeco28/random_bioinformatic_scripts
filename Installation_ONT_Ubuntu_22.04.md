@@ -52,6 +52,12 @@ Now, I borrow from the community knowledge (see more [here](https://askubuntu.co
 
 Edit the file ```/etc/apt/sources.list.d/nanoporetech.sources.list```, and in between ```deb``` and the url, add ```[signed-by=/etc/apt/keyrings/ont-repo.gpg]```. Use your favorite editor and remember that this file can only be edited with sudo permissions (very likely).
 
+My favorite way to do this will be:
+
+```bash
+echo "deb [signed-by=/etc/apt/keyrings/ont-repo.gpg] http://cdn.oxfordnanoportal.com/apt focal-stable non-free" | sudo tee /etc/apt/sources.list.d/nanoporetech.sources.list
+```
+
 This will ensure that apt recognizes the ont repo for installation...  now the test of fire! 
 
 Now we can go back to our ONT friendly support group and continue with the installation
